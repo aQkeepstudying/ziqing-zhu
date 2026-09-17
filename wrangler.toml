@@ -1,0 +1,6 @@
+name = "ziqing-zhu"
+compatibility_date = "2026-09-17"
+
+[assets]
+directory = "."
+html_handling = "auto-trailing-slash"
