@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=14" />
+  <link rel="stylesheet" href="styles.css?v=15" />
 </head>
 <body>
   <div class="page">
@@ -35,40 +35,66 @@
           <span class="tag">SQL</span>
         </p>
         <p class="caption">Company</p>
-        <p>Consumer-finance group. China: domestic lending. Indonesia: EasyCash.</p>
+        <p>Fintopia is a consumer-finance group. It builds digital credit products in China and in overseas markets. The China line is the domestic lending business: consumer small loans, from acquisition through repeat borrowing. The Indonesia line is EasyCash, a digital credit platform. I sat in data analysis on conversion and incremental funded volume—not as owner of the risk model, the limit policy, the warehouse, or outbound-call rosters.</p>
         <p class="caption">Work</p>
-        <h3>Domestic · China</h3>
-        <p class="tags">
-          <span class="tag">Growth</span>
-          <span class="tag">Experiments</span>
-          <span class="tag">Calls / IVR / SMS / Push</span>
-        </p>
-        <ul>
-          <li>Experiment design and review by user segment; channel paths across outbound calls, IVR, SMS, and push.</li>
-          <li>Limit-nudge A/B test with risk caps; conversion on the treated group doubled.</li>
-          <li>Weekly monitoring of conversion and incremental volume; anomaly review with risk and product.</li>
-        </ul>
-        <h3>EasyCash · Indonesia</h3>
-        <p class="tags">
-          <span class="tag">First-loan</span>
-          <span class="tag">Metrics</span>
-          <span class="tag">Weekly recap</span>
-        </p>
-        <ul>
-          <li>First-loan operating metrics: funnel steps, shared definitions, and monitoring (from 2025.12).</li>
-          <li>Product-experiment analysis on the first-loan path.</li>
-          <li>Automated weekly recap for operating review.</li>
-        </ul>
+        <div class="cols">
+          <div>
+            <h3>Domestic · China</h3>
+            <p class="tags">
+              <span class="tag">Growth</span>
+              <span class="tag">Experiments</span>
+              <span class="tag">Calls / IVR / SMS / Push</span>
+            </p>
+            <p class="role">2024.09 — 2025.12 · conversion and incremental volume</p>
+            <ul>
+              <li>Owned the growth loop on the domestic book: weekly monitoring of conversion and incremental volume; anomaly notes; then a test, then a review with risk and product.</li>
+              <li>Segmented users along the funnel (activation → registration → application completion → conversion → repeat). Channel paths: outbound calls, IVR, SMS, and push, including frequency, timing, and creative tests.</li>
+              <li>Product track: strategy and experiments on Push conversion, with design and engineering on the tool itself.</li>
+              <li>Operations track: segment-level experiments aimed at incremental volume; worked with risk on outstanding balance.</li>
+              <li>Built a marketing-tool iteration loop from 0 to 1, including Push: data inventory → experiment design → analysis → differentiated operations. Associated incremental volume: about RMB 20 million a month.</li>
+              <li>Completion-funnel marketing: about +1,000 completion UV / month and +1,500 funded UV / month.</li>
+              <li>Feature analysis found a lower-risk, lower-conversion group. A differentiated-limit test added about 500 converters a month (~5% of incremental heads) and about RMB 1 million funded.</li>
+              <li>Limit-nudge A/B on users who had used up a 0-term loan, run with risk caps: conversion on the treated group doubled.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>EasyCash · Indonesia</h3>
+            <p class="tags">
+              <span class="tag">First-loan</span>
+              <span class="tag">Metrics</span>
+              <span class="tag">Weekly recap</span>
+            </p>
+            <p class="role">2025.12 — 2026.05 · first-loan operating analysis</p>
+            <ul>
+              <li>Moved to EasyCash, Fintopia’s Indonesia product. The job was first-loan operating analysis, not the domestic growth-tactics stack.</li>
+              <li>Broke the first-loan path into steps; wrote the core metric at each step and how the steps join.</li>
+              <li>Aligned definitions and data boundaries so product, operations, and data used one funnel in review meetings.</li>
+              <li>Kept a live monitoring view of the path for daily tracking and weekly operating review.</li>
+              <li>Read product experiments on the first-loan path and wrote the recap in a fixed structure.</li>
+              <li>Left an automated weekly recap so the operating numbers did not depend on me being in the room.</li>
+            </ul>
+          </div>
+        </div>
       </article>
 
       <article class="section">
         <p class="when">2022.06 — 2023.06</p>
         <h2>IAEA · Vienna</h2>
         <p class="role">Information management intern · Nuclear Information Section</p>
-        <p>I supported INIS, the Agency’s nuclear literature system: keeping member-state records usable, producing the section’s annual-report numbers, and writing a Python workflow that tied the indexing steps together.</p>
+        <p class="tags">
+          <span class="tag">UN</span>
+          <span class="tag">INIS</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Python</span>
+        </p>
+        <p class="caption">Company</p>
+        <p>The International Atomic Energy Agency is a United Nations organization based in Vienna. I sat in the Nuclear Information Section, on INIS, the Agency’s nuclear-literature system: member states submit records; the section keeps the collection usable and reports on it.</p>
+        <p class="caption">Work</p>
         <ul>
-          <li>SQL Server, Power BI, and Excel for reporting and ad-hoc requests.</li>
-          <li>A Python auto-indexing workflow so specialists were not moving files by hand between tools.</li>
+          <li>Answered internal and external data requests on INIS; checked record accuracy and repaired anomalies so member-state submissions stayed usable.</li>
+          <li>SQL Server, SSRS, Power BI, and Excel for reporting, ad-hoc pulls, and a demand-side dashboard.</li>
+          <li>Produced the section’s numbers for the annual report.</li>
+          <li>Wrote a Python workflow from scratch—database, files, processing, and a small user step—so indexing specialists were not moving files by hand between tools.</li>
         </ul>
       </article>
 
@@ -76,7 +102,21 @@
         <p class="when">2020.10 — 2022.05</p>
         <h2>Yuanfudao</h2>
         <p class="role">Business analyst · Beijing</p>
-        <p>I sat in business analysis at an education company: dashboards, project write-ups, and experiments on long-course operations. The work I can still point to is a CRM-side A/B test that raised the renewal rate by five percent, and the seasonal patterns we then used in campaigns.</p>
+        <p class="tags">
+          <span class="tag">Education</span>
+          <span class="tag">Funnel</span>
+          <span class="tag">A/B tests</span>
+        </p>
+        <p class="caption">Company</p>
+        <p>Yuanfudao is an online education company. I sat in business analysis for long-course operations: the team’s job was to turn acquisition into paid terms, then into renewal, with a clear weekly operating picture.</p>
+        <p class="caption">Work</p>
+        <ul>
+          <li>Set the operating metrics and split conversion targets by term, month, and week.</li>
+          <li>Read the full conversion funnel for long-course user operations; wrote the dashboards and templates the team used every week.</li>
+          <li>About 40 data templates, 10 visualization boards, 20+ evaluations (A/B tests, feature launches, campaigns), and 10+ topic reports.</li>
+          <li>CRM-side A/B test: renewal rate +5%. Seasonal patterns from that work went into later campaigns.</li>
+          <li>Completion-rate segmentation adopted in operations: completion +5%; campaign ROI ×3.</li>
+        </ul>
       </article>
     </div>
   </div>

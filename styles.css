@@ -7,6 +7,7 @@
   --line: #cccccc;
   --link: #857251;
   --copy: 45.5rem;
+  --page: 62rem;
 }
 
 * { box-sizing: border-box; }
@@ -131,7 +132,7 @@ h2 {
   font-weight: 700;
   line-height: 1.5;
 }
-.section { margin: 0 0 2.4rem; max-width: var(--copy); }
+.section { margin: 0 0 2.6rem; max-width: var(--page); }
 .section h3 {
   margin: 0.85rem 0 0.35rem;
   color: var(--taupe);
@@ -236,7 +237,17 @@ li { margin: 0.25rem 0; }
   object-fit: contain;
   background: var(--cream);
 }
-.person { max-width: var(--copy); }
+.person { max-width: var(--page); }
+
+.cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.2rem 2.6rem;
+  align-items: start;
+}
+.cols h3 { margin-top: 0; }
+.cols .when { margin-top: 0; }
+.cols h2 { margin-top: 0; }
 
 footer {
   margin-top: 2.2rem;
@@ -255,7 +266,7 @@ footer {
   }
   .nav ul { display: flex; flex-wrap: wrap; gap: 0 1.1rem; }
   .main { padding: 1.3rem 1.2rem 3rem; }
-  .hero, .album { grid-template-columns: 1fr; }
+  .hero, .album, .cols { grid-template-columns: 1fr; }
   .portrait { max-width: 16rem; }
 }
 
