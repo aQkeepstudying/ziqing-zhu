@@ -6,6 +6,7 @@
   --taupe: #857251;
   --line: #cccccc;
   --link: #857251;
+  --copy: 45.5rem;
 }
 
 * { box-sizing: border-box; }
@@ -78,14 +79,15 @@ a:focus-visible { outline: 2px solid var(--taupe); outline-offset: 3px; }
 .portrait {
   position: relative;
   background: var(--cream);
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
 }
-.portrait span {
-  position: absolute;
-  left: 0.7rem;
-  bottom: 0.7rem;
-  color: #9e9e9e;
-  font-size: 0.75rem;
+.portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
 }
 
 h1 {
@@ -102,11 +104,24 @@ h1 {
   color: var(--mute);
   font-size: 0.95rem;
 }
+.lede { max-width: var(--copy); }
 .lede p { margin: 0 0 1rem; }
-.contact {
-  margin-top: 1.35rem;
-  color: var(--mute);
+.caption {
+  margin: 0 0 0.35rem;
+  color: var(--taupe);
+  font-family: Roboto, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
+.contact {
+  margin-top: 1.5rem;
+  color: var(--mute);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.contact p { margin: 0; }
 
 h2 {
   margin: 0 0 0.3rem;
@@ -116,15 +131,48 @@ h2 {
   font-weight: 700;
   line-height: 1.5;
 }
-.section { margin: 0 0 2.4rem; }
+.section { margin: 0 0 2.4rem; max-width: var(--copy); }
+.section h3 {
+  margin: 0.85rem 0 0.35rem;
+  color: var(--taupe);
+  font-family: Roboto, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.section p { margin: 0 0 0.7rem; }
+.section .caption { margin: 0.85rem 0 0.25rem; }
+.section .caption:first-of-type { margin-top: 0.15rem; }
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem;
+  margin: 0 0 0.75rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.08rem 0.42rem;
+  border: 1px solid var(--line);
+  color: var(--taupe);
+  font-family: Roboto, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
 .when {
   margin: 0 0 0.3rem;
   color: var(--taupe);
   font-size: 0.92rem;
 }
-.role { color: var(--mute); margin: 0 0 0.7rem; }
+.role { color: var(--mute); margin: 0 0 0.45rem; }
 ul { padding-left: 1.15rem; }
+.section ul,
+.section ol { margin: 0.1rem 0 1.15rem; }
+.section ol { padding-left: 1.2rem; }
 li { margin: 0.25rem 0; }
+.section h2 { margin-top: 1.15rem; }
+.section .caption + h2 { margin-top: 0.15rem; }
+.section .when + h2 { margin-top: 0; }
 
 .explain h3 {
   margin: 1.2rem 0 0.3rem;
@@ -135,19 +183,60 @@ li { margin: 0.25rem 0; }
 }
 .explain p { margin: 0 0 0.8rem; }
 
-.moments {
+.papers {
+  list-style: none;
+  padding-left: 0;
+}
+.papers li { margin: 0 0 0.9rem; }
+
+.album {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin: 1.1rem 0 2.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem 0.9rem;
+  margin: 0.7rem 0 2.3rem;
 }
-.moment {
-  min-height: 10rem;
-  padding: 0.7rem;
+.album figure,
+.family {
+  margin: 0;
+}
+.album img,
+.family img {
+  display: block;
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+.album .pin-faces {
+  object-position: center 78%;
+}
+.album-full img {
+  height: auto;
+  object-fit: contain;
   background: var(--cream);
-  color: var(--mute);
-  font-size: 0.8rem;
 }
+.album .wide { grid-column: 1 / -1; }
+.album .wide img {
+  height: auto;
+  max-height: 32rem;
+  object-fit: contain;
+  background: var(--cream);
+}
+.album figcaption,
+.family figcaption {
+  margin-top: 0.35rem;
+  color: var(--mute);
+  font-size: 0.82rem;
+}
+.family {
+  max-width: 22rem;
+  margin: 0 0 1rem;
+}
+.family img {
+  height: auto;
+  object-fit: contain;
+  background: var(--cream);
+}
+.person { max-width: var(--copy); }
 
 footer {
   margin-top: 2.2rem;
@@ -166,7 +255,7 @@ footer {
   }
   .nav ul { display: flex; flex-wrap: wrap; gap: 0 1.1rem; }
   .main { padding: 1.3rem 1.2rem 3rem; }
-  .hero, .moments { grid-template-columns: 1fr; }
+  .hero, .album { grid-template-columns: 1fr; }
   .portrait { max-width: 16rem; }
 }
 
