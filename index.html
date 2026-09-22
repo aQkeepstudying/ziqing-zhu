@@ -7,44 +7,72 @@
   <meta name="description" content="Ziqing Zhu, data analyst in Shanghai. SQL, Python, experiments, metrics, growth." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=15" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=40" />
 </head>
 <body>
   <div class="page">
-    <aside class="nav">
-      <p class="brand">Ziqing Zhu</p>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="else.html">Else</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <div class="main">
-      <header class="hero">
-        <div class="portrait">
-          <img src="portrait.jpg" alt="Ziqing Zhu at a climbing gym, holding a vegetable bouquet" />
-        </div>
-        <div>
-          <h1>Ziqing Zhu</h1>
-          <p class="aka">朱子青 · data analyst, Shanghai</p>
-          <div class="lede">
-            <p>I’m a data analyst in Shanghai. Most days that’s SQL, Python, A/B tests, metrics, and how a product grows.</p>
-            <p>I did a master’s in condensed-matter physics at Peking University. Since then I’ve been in data work for six years. I like working with other teams, laying things out so people can follow, and talking across languages.</p>
-            <p>The through-line isn’t the job title. It’s that I can sit with a hard, bounded problem until it’s small enough to be wrong in public. Physics trained that habit; analysis is where I still use it. Climbing is the outdoor version.</p>
-          </div>
-          <div class="contact">
-            <p class="caption">Contact</p>
-            <p>Email: <a href="mailto:zhuziqing1117@gmail.com">zhuziqing1117@gmail.com</a></p>
-            <p>Phone / WeChat: <a href="tel:+8618811556761">+86 188 1155 6761</a></p>
-            <p>Chinese, English</p>
+    <header class="site-head">
+      <div class="site-head-inner">
+        <a class="brand" href="index.html">Ziqing Zhu</a>
+        <div class="site-tools">
+          <nav aria-label="Primary">
+            <ul>
+              <li><a href="index.html" aria-current="page">Home</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="else.html">Else</a></li>
+            </ul>
+          </nav>
+          <div class="nav-rule" aria-hidden="true"></div>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-set-lang="zh" aria-pressed="false">中</button>
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="content">
+        <header class="hero">
+          <div class="portrait">
+            <img src="portrait.jpg" alt="Ziqing Zhu at a climbing gym, holding a vegetable bouquet" />
+          </div>
+          <div>
+            <h1>Ziqing Zhu</h1>
+            <p class="aka">朱子青 · data analyst, Shanghai</p>
+            <div class="lede">
+              <p>I’m a data analyst in Shanghai. Most days that’s SQL, Python, A/B tests, metrics, and how a product grows.</p>
+              <p>I did a master’s in condensed-matter physics at Peking University. Since then I’ve been in data work for six years. I like working with other teams, laying things out so people can follow, and talking across languages.</p>
+              <p>The through-line isn’t the job title. It’s that I can sit with a hard, bounded problem until it’s small enough to be wrong in public. Physics trained that habit; analysis is where I still use it. Climbing is the outdoor version.</p>
+            </div>
+            <div class="contact">
+              <h2 class="section-title">Contact</h2>
+              <p>Email: <a href="mailto:zhuziqing1117@gmail.com">zhuziqing1117@gmail.com</a></p>
+              <p>Phone / WeChat: <a href="tel:+8618811556761">+86 188 1155 6761</a></p>
+              <p>Chinese, English</p>
+            </div>
+          </div>
+        </header>
+      </div>
+    </main>
   </div>
+  <script>
+    (function () {
+      var saved = localStorage.getItem("ziqing-lang") || "en";
+      function setLang(lang) {
+        document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+        document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+          btn.setAttribute("aria-pressed", String(btn.getAttribute("data-set-lang") === lang));
+        });
+        localStorage.setItem("ziqing-lang", lang);
+      }
+      setLang(saved);
+      document.querySelector(".lang-switch").addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-set-lang]");
+        if (btn) setLang(btn.getAttribute("data-set-lang"));
+      });
+    })();
+  </script>
 </body>
 </html>

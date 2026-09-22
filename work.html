@@ -6,119 +6,316 @@
   <title>Work · Ziqing Zhu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=15" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=40" />
 </head>
 <body>
   <div class="page">
-    <aside class="nav">
-      <p class="brand">Ziqing Zhu</p>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html" aria-current="page">Work</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="else.html">Else</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <div class="main">
-      <article class="section">
-        <p class="when">2023.09 — 2026.05</p>
-        <h2>Fintopia</h2>
-        <p class="role">Data analyst · Shanghai, then Indonesia</p>
-        <p class="tags">
-          <span class="tag">Consumer finance</span>
-          <span class="tag">Domestic</span>
-          <span class="tag">EasyCash</span>
-          <span class="tag">A/B tests</span>
-          <span class="tag">SQL</span>
-        </p>
-        <p class="caption">Company</p>
-        <p>Fintopia is a consumer-finance group. It builds digital credit products in China and in overseas markets. The China line is the domestic lending business: consumer small loans, from acquisition through repeat borrowing. The Indonesia line is EasyCash, a digital credit platform. I sat in data analysis on conversion and incremental funded volume—not as owner of the risk model, the limit policy, the warehouse, or outbound-call rosters.</p>
-        <p class="caption">Work</p>
-        <div class="cols">
-          <div>
-            <h3>Domestic · China</h3>
-            <p class="tags">
-              <span class="tag">Growth</span>
-              <span class="tag">Experiments</span>
-              <span class="tag">Calls / IVR / SMS / Push</span>
-            </p>
-            <p class="role">2024.09 — 2025.12 · conversion and incremental volume</p>
+    <header class="site-head">
+      <div class="site-head-inner">
+        <a class="brand" href="index.html">Ziqing Zhu</a>
+        <div class="site-tools">
+          <nav aria-label="Primary">
             <ul>
-              <li>Owned the growth loop on the domestic book: weekly monitoring of conversion and incremental volume; anomaly notes; then a test, then a review with risk and product.</li>
-              <li>Segmented users along the funnel (activation → registration → application completion → conversion → repeat). Channel paths: outbound calls, IVR, SMS, and push, including frequency, timing, and creative tests.</li>
-              <li>Product track: strategy and experiments on Push conversion, with design and engineering on the tool itself.</li>
-              <li>Operations track: segment-level experiments aimed at incremental volume; worked with risk on outstanding balance.</li>
-              <li>Built a marketing-tool iteration loop from 0 to 1, including Push: data inventory → experiment design → analysis → differentiated operations. Associated incremental volume: about RMB 20 million a month.</li>
-              <li>Completion-funnel marketing: about +1,000 completion UV / month and +1,500 funded UV / month.</li>
-              <li>Feature analysis found a lower-risk, lower-conversion group. A differentiated-limit test added about 500 converters a month (~5% of incremental heads) and about RMB 1 million funded.</li>
-              <li>Limit-nudge A/B on users who had used up a 0-term loan, run with risk caps: conversion on the treated group doubled.</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="work.html" aria-current="page">Work</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="else.html">Else</a></li>
             </ul>
-          </div>
-          <div>
-            <h3>EasyCash · Indonesia</h3>
-            <p class="tags">
-              <span class="tag">First-loan</span>
-              <span class="tag">Metrics</span>
-              <span class="tag">Weekly recap</span>
-            </p>
-            <p class="role">2025.12 — 2026.05 · first-loan operating analysis</p>
-            <ul>
-              <li>Moved to EasyCash, Fintopia’s Indonesia product. The job was first-loan operating analysis, not the domestic growth-tactics stack.</li>
-              <li>Broke the first-loan path into steps; wrote the core metric at each step and how the steps join.</li>
-              <li>Aligned definitions and data boundaries so product, operations, and data used one funnel in review meetings.</li>
-              <li>Kept a live monitoring view of the path for daily tracking and weekly operating review.</li>
-              <li>Read product experiments on the first-loan path and wrote the recap in a fixed structure.</li>
-              <li>Left an automated weekly recap so the operating numbers did not depend on me being in the room.</li>
-            </ul>
+          </nav>
+          <div class="nav-rule" aria-hidden="true"></div>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-set-lang="zh" aria-pressed="false">中</button>
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
           </div>
         </div>
-      </article>
+      </div>
+    </header>
+    <main class="main">
+      <div class="content deck">
+        <header class="page-head">
+          <h1 class="page-title">
+            <span data-lang-text="en">Work</span>
+            <span data-lang-text="zh" hidden>工作经历</span>
+          </h1>
+        </header>
 
-      <article class="section">
-        <p class="when">2022.06 — 2023.06</p>
-        <h2>IAEA · Vienna</h2>
-        <p class="role">Information management intern · Nuclear Information Section</p>
-        <p class="tags">
-          <span class="tag">UN</span>
-          <span class="tag">INIS</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Python</span>
-        </p>
-        <p class="caption">Company</p>
-        <p>The International Atomic Energy Agency is a United Nations organization based in Vienna. I sat in the Nuclear Information Section, on INIS, the Agency’s nuclear-literature system: member states submit records; the section keeps the collection usable and reports on it.</p>
-        <p class="caption">Work</p>
-        <ul>
-          <li>Answered internal and external data requests on INIS; checked record accuracy and repaired anomalies so member-state submissions stayed usable.</li>
-          <li>SQL Server, SSRS, Power BI, and Excel for reporting, ad-hoc pulls, and a demand-side dashboard.</li>
-          <li>Produced the section’s numbers for the annual report.</li>
-          <li>Wrote a Python workflow from scratch—database, files, processing, and a small user step—so indexing specialists were not moving files by hand between tools.</li>
-        </ul>
-      </article>
+        <div data-lang-panel="zh" hidden>
+          <h2 class="section-title">概览</h2>
+          <p class="overview">资深数据分析与商业分析师，具备扎实的数据科学背景（北京大学硕士）与多行业（消费金融、在线教育、国际组织）实战经验。擅长通过构建指标体系、A/B 实验驱动业务增长、漏斗卡点拆解及跨国组织的数据资产治理。</p>
 
-      <article class="section">
-        <p class="when">2020.10 — 2022.05</p>
-        <h2>Yuanfudao</h2>
-        <p class="role">Business analyst · Beijing</p>
-        <p class="tags">
-          <span class="tag">Education</span>
-          <span class="tag">Funnel</span>
-          <span class="tag">A/B tests</span>
-        </p>
-        <p class="caption">Company</p>
-        <p>Yuanfudao is an online education company. I sat in business analysis for long-course operations: the team’s job was to turn acquisition into paid terms, then into renewal, with a clear weekly operating picture.</p>
-        <p class="caption">Work</p>
-        <ul>
-          <li>Set the operating metrics and split conversion targets by term, month, and week.</li>
-          <li>Read the full conversion funnel for long-course user operations; wrote the dashboards and templates the team used every week.</li>
-          <li>About 40 data templates, 10 visualization boards, 20+ evaluations (A/B tests, feature launches, campaigns), and 10+ topic reports.</li>
-          <li>CRM-side A/B test: renewal rate +5%. Seasonal patterns from that work went into later campaigns.</li>
-          <li>Completion-rate segmentation adopted in operations: completion +5%; campaign ROI ×3.</li>
-        </ul>
-      </article>
-    </div>
+          <section class="group">
+            <h2 class="section-title">经历</h2>
+            <div class="project-grid">
+              <article class="project">
+                <header class="entry-head">
+                  <h2 class="entry-title">瓴岳科技</h2>
+                  <p class="entry-date num">2023.09 — 2026.06</p>
+                </header>
+                <p class="entry-role">业务分析专家 / 增长策略分析师 <span class="where">· 上海</span></p>
+                <div class="tracks">
+                  <section class="track">
+                    <h3 class="entry-sub">国内</h3>
+                    <div class="scope">
+                      <p class="kicker">业务范围</p>
+                      <p>负责消费金融业务的用户生命周期增长，聚焦「新用户注册到授信（全流程漏斗转化）」及「新客首次复借（生命周期二次转化）」的精细化运营与策略实验。</p>
+                    </div>
+                    <div class="block">
+                      <p class="kicker">核心工作</p>
+                      <ul>
+                        <li>搭建并优化核心经营指标体系，定期输出周/月度漏斗健康度诊断，定位并穿透关键流失卡点。</li>
+                        <li>联合产品与运营团队，针对不同风险与价值偏好的用户开展分层策略实验；负责多渠道触达工具（消息推送、智能语音外呼、短信等）的策略迭代与效果归因（A/B 测试与增量分析）。</li>
+                        <li>建立标准化的「策略上线—效果回收—推全/返灰/下线」实验台账与复盘闭环。</li>
+                      </ul>
+                    </div>
+                    <div class="block">
+                      <p class="kicker">关键结果</p>
+                      <ul>
+                        <li><strong>差异化提额与转化拉动：</strong>通过特征分析识别「低风险但因额度不足未下单」的优质长尾用户，设计差异化提额与触达实验，实现月新增转化用户提升 <span class="num">500 UV</span>（贡献 5% 增量），直接带来月放款额提升 <span class="num">100</span> 万元。</li>
+                        <li><strong>漏斗卡点优化：</strong>针对注册至授信全流程漏斗进行高频次拆解与卡点定位，推动策略优化，使新客注册到完件的整体转化率实现显著提升。</li>
+                        <li><strong>多渠道触达效率优化：</strong>建立多渠道触达的 A/B 测试与归因机制，通过精细化人群分层动态调整触达策略，有效提升渠道转化率并降低无效触达成本。</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section class="track">
+                    <h3 class="entry-sub">海外 · 印尼</h3>
+                    <div class="scope">
+                      <p class="kicker">业务范围</p>
+                      <p>聚焦印尼消费小贷业务，负责「新用户首笔借款（首贷）」的全链路经营分析与核心指标体系建设。</p>
+                    </div>
+                    <div class="block">
+                      <p class="kicker">核心工作</p>
+                      <ul>
+                        <li>从零搭建海外首贷全链路经营分析框架，统一跨部门、跨地区的核心业务口径与漏斗定义。</li>
+                        <li>构建标准化的周度经营复盘看板与监控体系，为跨国业务团队的策略制定与目标对齐提供数据支撑。</li>
+                      </ul>
+                    </div>
+                    <div class="block">
+                      <p class="kicker">关键结果</p>
+                      <ul>
+                        <li><strong>指标体系与看板从 0 到 1 落地：</strong>独立搭建海外首贷业务的全链路监控看板，梳理并固化核心指标口径，解决数据口径不一致、复盘缺乏抓手的问题。</li>
+                        <li><strong>支撑核心业务复盘与决策：</strong>通过常态化周报与经营归因分析，系统性支撑海外首贷业务在各关键节点的目标拆解与策略迭代。</li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div class="featured">
+                  <p class="kicker">专项亮点</p>
+                  <ul>
+                    <li><strong>背景：</strong>早期未下单用户往往采取统一的临额策略，导致部分潜在好人因额度不足而流失。</li>
+                    <li><strong>行动：</strong>研究已转化用户特征，联合团队圈出低风险长尾客群，打开流量并设计差异化提额方案，开展 A/B 实验。</li>
+                    <li><strong>结果：</strong>实验组放款率翻倍，风险保持在健康可控范围内；测算置换比合理后沉淀为全量策略。</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project">
+                <header class="entry-head">
+                  <h2 class="entry-title">国际原子能机构</h2>
+                  <p class="entry-date num">2022.05 — 2023.05</p>
+                </header>
+                <p class="entry-role">信息管理与数据治理实习生 <span class="where">· 维也纳</span></p>
+                <div class="scope">
+                  <p class="kicker">业务范围</p>
+                  <p>支持核心核能信息管理系统，负责部门级数据资产治理、自动化工作流建设与关键业务报表迁移。</p>
+                </div>
+                <div class="block">
+                  <p class="kicker">核心工作</p>
+                  <ul>
+                    <li>从 0 到 1 使用 Python 编写自动化工作流，整合并重构多项人工流转环节，规范数据索引标准，大幅提升团队日常数据流转效率。</li>
+                    <li>统筹并完成数据库迁移过程中 <span class="num">20+</span> 项核心统计报告的平稳迁移与多维数据对齐，并向部门输出数据架构改善建议。</li>
+                    <li>承接跨部门日常数据需求，保障底层数据库准确性，输出多维分析图表（基于 SQL Server、Power BI 等）支撑年度总结与重大国际会议。</li>
+                  </ul>
+                </div>
+                <div class="block">
+                  <p class="kicker">关键结果</p>
+                  <ul>
+                    <li><strong>效率提升与自动化沉淀：</strong>通过构建端到端自动化工作流，减少大量人工重复操作，规范数据索引标准。</li>
+                    <li><strong>重大项目保障：</strong>高质量完成核心系统升级和 <span class="num">20+</span> 统计报告迁移，实现数据零误差，保障国际组织多边业务的合规与平稳运行。</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project">
+                <header class="entry-head">
+                  <h2 class="entry-title">猿辅导</h2>
+                  <p class="entry-date num">2020.10 — 2022.05</p>
+                </header>
+                <p class="entry-role">数据分析师 / 商业分析师 <span class="where">· 北京</span></p>
+                <div class="scope">
+                  <p class="kicker">业务范围</p>
+                  <p>独立对接斑马 App 用户运营与课程服务团队，聚焦「用户续报/生命周期留存」及「核心业务商业化变现」的深度数据分析。</p>
+                </div>
+                <div class="block">
+                  <p class="kicker">核心工作</p>
+                  <ul>
+                    <li>从 0 到 1 搭建并完善业务指标体系，累计交付 <span class="num">40+</span> 个标准化经营与监控看板，高效响应业务方高频数据需求。</li>
+                    <li>深度参与公司核心商业项目（如续报率预测、绩效补偿方案制定），从数据视角为业务应对外部政策风险、优化资源配置提供关键决策支持。</li>
+                    <li>开展多项业务专题分析，自主挖掘转化卡点，设计分析模型并输出高质量分析报告，推动「数据洞察 → 业务策略调整 → 效果复盘」的完整闭环。</li>
+                  </ul>
+                </div>
+                <div class="block">
+                  <p class="kicker">关键结果</p>
+                  <ul>
+                    <li><strong>体系化看板建设：</strong>构建覆盖业务全链路的 <span class="num">40+</span> 个核心看板，规范指标口径，大幅提升运营团队的日常数据获取与复盘效率。</li>
+                    <li><strong>核心策略落地与风险应对：</strong>深度支撑续报率预测及绩效激励方案等核心项目，通过精准的数据测算和策略闭环，帮助业务团队在行业变局中探索并落地新的商业增长点。</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div data-lang-panel="en">
+          <h2 class="section-title">Overview</h2>
+          <p class="overview">Senior Data &amp; Business Analyst with a strong foundation in condensed-matter physics (M.S., Peking University) and cross-industry experience in consumer finance, edutech, and international organizations. Proven work in user growth through A/B testing, funnel optimization, core metric frameworks, and cross-border data governance.</p>
+
+          <section class="group">
+            <h2 class="section-title">Experience</h2>
+            <div class="project-grid">
+              <article class="project">
+                <header class="entry-head">
+                  <h2 class="entry-title">Fintopia</h2>
+                  <p class="entry-date num">Sept 2023 — June 2026</p>
+                </header>
+                <p class="entry-role">Business Analysis Expert / Growth Strategy Analyst <span class="where">· Shanghai</span></p>
+                <div class="tracks">
+                  <section class="track">
+                    <h3 class="entry-sub">Domestic</h3>
+                    <div class="scope">
+                      <p class="kicker">Business scope</p>
+                      <p>Led user-lifecycle growth for consumer financial services, focusing on the end-to-end funnel (registration to credit approval / loan issuance) and second-time conversion (repeat borrowing) for new users.</p>
+                    </div>
+                    <div class="block">
+                      <p class="kicker">Core actions</p>
+                      <ul>
+                        <li>Designed and optimized core business metric frameworks, delivering weekly/monthly funnel health diagnostics to pinpoint and resolve drop-off points.</li>
+                        <li>Partnered with product and operations to run segmented strategy experiments across risk and value groups; owned iteration and attribution (A/B tests and incremental analysis) for push, IVR, and SMS.</li>
+                        <li>Established a standardized closed-loop experiment workflow: launch, result evaluation, full rollout / gray rollback / kill.</li>
+                      </ul>
+                    </div>
+                    <div class="block">
+                      <p class="kicker">Key results</p>
+                      <ul>
+                        <li><strong>Differential credit limit &amp; conversion uplift:</strong> Identified low-risk users who had not converted because of insufficient initial limits; tailored limit-adjustment experiments generated <span class="num">+500</span> monthly converted UVs (a 5% incremental gain) and about <span class="num">RMB 1M</span> in monthly loan volume.</li>
+                        <li><strong>Funnel drop-off optimization:</strong> High-frequency breakdowns from registration to completed applications, driving product and strategy changes that lifted new-user completion rates.</li>
+                        <li><strong>Multi-channel engagement:</strong> Built A/B testing and attribution for outbound channels, adjusting frequency and messaging by segment to raise conversion while cutting wasted contact.</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section class="track">
+                    <h3 class="entry-sub">Overseas · Indonesia</h3>
+                    <div class="scope">
+                      <p class="kicker">Business scope</p>
+                      <p>Consumer lending in Indonesia (EasyCash). Full-link analytics and core metric framework for first-time borrowers.</p>
+                    </div>
+                    <div class="block">
+                      <p class="kicker">Core actions</p>
+                      <ul>
+                        <li>Built the first-loan analytical framework from scratch, unifying metric definitions and funnel milestones across functions and regions.</li>
+                        <li>Developed weekly review dashboards and monitoring so multinational teams could align targets and iterate strategy.</li>
+                      </ul>
+                    </div>
+                    <div class="block">
+                      <p class="kicker">Key results</p>
+                      <ul>
+                        <li><strong>End-to-end metric framework &amp; dashboards:</strong> Independently stood up full-link monitoring for first-loan operations, fixing inconsistent definitions and giving reviews a shared set of numbers.</li>
+                        <li><strong>Strategic decision support:</strong> Weekly reporting and attribution analyses for goal breakdown and strategy iteration at launch milestones.</li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div class="featured">
+                  <p class="kicker">Featured project</p>
+                  <ul>
+                    <li><strong>Background:</strong> Unconverted users sat under a single limit-nudge rule, so some good borrowers dropped off because the cap was too low.</li>
+                    <li><strong>Action:</strong> Profiled converted users, carved out a low-risk long-tail segment with the team, opened traffic, and ran A/B tests with differential limits.</li>
+                    <li><strong>Result:</strong> Loan conversion on the treated group doubled while risk stayed in a healthy band; after the tradeoff checked out, the rule became the default rollout.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project">
+                <header class="entry-head">
+                  <h2 class="entry-title">IAEA</h2>
+                  <p class="entry-date num">May 2022 — May 2023</p>
+                </header>
+                <p class="entry-role">Information Management &amp; Data Governance Intern <span class="where">· Vienna</span></p>
+                <div class="scope">
+                  <p class="kicker">Business scope</p>
+                  <p>Supported core nuclear-information systems at the International Atomic Energy Agency: departmental data-asset governance, automated workflows, and critical report migration.</p>
+                </div>
+                <div class="block">
+                  <p class="kicker">Core actions</p>
+                  <ul>
+                    <li>Designed Python automation from scratch to replace manual handoffs and standardize indexing, raising daily throughput.</li>
+                    <li>Migrated <span class="num">20+</span> core statistical reports through a database upgrade, aligned dimensions, and wrote architecture recommendations for the section.</li>
+                    <li>Handled cross-department data requests, kept the underlying tables accurate, and produced SQL Server / Power BI charts for the annual review and major international meetings.</li>
+                  </ul>
+                </div>
+                <div class="block">
+                  <p class="kicker">Key results</p>
+                  <ul>
+                    <li><strong>Efficiency &amp; workflow automation:</strong> Cut repeated manual steps and unified indexing standards with end-to-end scripts.</li>
+                    <li><strong>Critical project assurance:</strong> System upgrade and <span class="num">20+</span> report migration with no data discrepancy, keeping multilateral reporting compliant and stable.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="project">
+                <header class="entry-head">
+                  <h2 class="entry-title">Yuanfudao</h2>
+                  <p class="entry-date num">Oct 2020 — May 2022</p>
+                </header>
+                <p class="entry-role">Data / Business Analyst <span class="where">· Beijing</span></p>
+                <div class="scope">
+                  <p class="kicker">Business scope</p>
+                  <p>Partner to the Zebra App user-operations and course-services team, on student retention (renewal) and commercial monetization analytics.</p>
+                </div>
+                <div class="block">
+                  <p class="kicker">Core actions</p>
+                  <ul>
+                    <li>Built the business metric framework from scratch and delivered <span class="num">40+</span> standardized operating and monitoring dashboards for high-frequency stakeholder requests.</li>
+                    <li>Worked on core commercial projects (renewal-rate prediction, performance-compensation design), giving the business numbers to adapt to regulatory shifts and reallocate resources.</li>
+                    <li>Ran topic analyses on conversion bottlenecks, with reports that closed the loop from insight → strategy → review.</li>
+                  </ul>
+                </div>
+                <div class="block">
+                  <p class="kicker">Key results</p>
+                  <ul>
+                    <li><strong>Dashboard ecosystem:</strong> <span class="num">40+</span> end-to-end boards, standardized definitions, and faster weekly retrieval and review for operations.</li>
+                    <li><strong>Strategic mitigation &amp; commercial growth:</strong> Supported renewal forecasting and incentive design, helping the team find and land new growth drivers during an industry transition.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
   </div>
+  <script>
+    (function () {
+      var saved = localStorage.getItem("ziqing-lang") || "en";
+      function setLang(lang) {
+        document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+        document.querySelectorAll("[data-lang-panel]").forEach(function (el) {
+          el.hidden = el.getAttribute("data-lang-panel") !== lang;
+        });
+        document.querySelectorAll("[data-lang-text]").forEach(function (el) {
+          el.hidden = el.getAttribute("data-lang-text") !== lang;
+        });
+        document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+          btn.setAttribute("aria-pressed", String(btn.getAttribute("data-set-lang") === lang));
+        });
+        localStorage.setItem("ziqing-lang", lang);
+      }
+      setLang(saved);
+      document.querySelector(".lang-switch").addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-set-lang]");
+        if (btn) setLang(btn.getAttribute("data-set-lang"));
+      });
+    })();
+  </script>
 </body>
 </html>

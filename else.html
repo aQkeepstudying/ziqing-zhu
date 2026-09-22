@@ -6,85 +6,191 @@
   <title>Else · Ziqing Zhu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=15" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=40" />
 </head>
 <body>
   <div class="page">
-    <aside class="nav">
-      <p class="brand">Ziqing Zhu</p>
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="else.html" aria-current="page">Else</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <div class="main">
-      <article class="section person">
-        <h2>What I am like</h2>
-        <figure class="family">
-          <img src="life/family.jpg" alt="An old family photograph: parents holding two babies" />
-          <figcaption>My parents, my twin, and me</figcaption>
-        </figure>
-        <p>I would rather not put labels on myself. People are more complicated than that, and I am not a fair judge of my own character. What I can say is simple: I am curious about many things. If a chance comes, I will take the hardship that comes with trying something new.</p>
-      </article>
-
-      <article class="section">
-        <h2>Life outside work</h2>
-        <p>Besides the job I travel, climb, read, and walk. Seventeen countries so far. The phone is full of frames I have not sorted. These are a few, uncatalogued.</p>
-      </article>
-
-      <h2>Travel</h2>
-      <div class="album">
-        <figure>
-          <img src="life/travel-christmas.jpg" alt="With a friend under a New Year tree, 2026" />
-          <figcaption>New Year’s Eve, 2026</figcaption>
-        </figure>
-        <figure>
-          <img src="life/travel-snowboard.jpg" alt="Snowboarding in the mountains with a friend" />
-          <figcaption>Mountains, snowboard</figcaption>
-        </figure>
-        <figure>
-          <img src="life/travel-jiuzhaigou.jpg" alt="By a turquoise lake in the mountains" />
-          <figcaption>Jiuzhaigou</figcaption>
-        </figure>
-        <figure>
-          <img src="life/travel-ice.jpg" alt="On a boat among ice, holding a piece of clear ice" />
-          <figcaption>Ice, on the water</figcaption>
-        </figure>
-        <figure>
-          <img src="life/travel-dinner.jpg" alt="Smiling at a dinner table in an old hall" />
-          <figcaption>An evening out</figcaption>
-        </figure>
-        <figure>
-          <img src="life/travel-florence.jpg" alt="Laughing by a river and a stone tower" />
-          <figcaption>Florence</figcaption>
-        </figure>
-        <figure>
-          <img src="life/vienna-flags.jpg" alt="Standing in front of a wall of national flags" />
-          <figcaption>Vienna</figcaption>
-        </figure>
-        <figure>
-          <img class="pin-faces" src="life/travel-zurich.jpg" alt="With a friend above a river and old town" />
-          <figcaption>Zurich</figcaption>
-        </figure>
+    <header class="site-head">
+      <div class="site-head-inner">
+        <a class="brand" href="index.html">Ziqing Zhu</a>
+        <div class="site-tools">
+          <nav aria-label="Primary">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="else.html" aria-current="page">Else</a></li>
+            </ul>
+          </nav>
+          <div class="nav-rule" aria-hidden="true"></div>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-set-lang="zh" aria-pressed="false">中</button>
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+          </div>
+        </div>
       </div>
+    </header>
+    <main class="main">
+      <div class="content">
+        <header class="page-head">
+          <h1 class="page-title">
+            <span data-lang-text="en">Else</span>
+            <span data-lang-text="zh" hidden>其它</span>
+          </h1>
+        </header>
 
-      <h2>Climbing</h2>
-      <div class="album album-full">
-        <figure>
-          <img src="life/climb-set.jpg" alt="Six frames from an outdoor climbing day" />
-          <figcaption>A climbing day</figcaption>
-        </figure>
-        <figure>
-          <img src="life/climb-wall.jpg" alt="On a cliff with a red rope, looking down" />
-          <figcaption>On the wall</figcaption>
-        </figure>
+        <section class="chapter">
+          <h2 class="section-title">
+            <span data-lang-text="en">Where I start</span>
+            <span data-lang-text="zh" hidden>关于起点</span>
+          </h2>
+          <div class="chapter-lead">
+            <div class="chapter-copy">
+              <p data-lang-text="en">I prefer not to define myself by labels. People are far more intricate than that, and I am hardly an impartial judge of who I am. If anything is true: I am simply drawn to whatever sparks my curiosity. When a new door opens, I am willing to embrace whatever difficulty comes with stepping through it.</p>
+              <p data-lang-text="zh" hidden>我不习惯用标签定义自己。人远比那要复杂，我也不是那个能客观评判自己的法官。若真要说些什么：我只是对许多事怀抱好奇。当新的可能出现，我愿欣然承载那份随之而来的陌生与挑战。</p>
+            </div>
+            <figure class="polaroid tall">
+              <img src="life/family.jpg" alt="An old family photograph: parents holding two babies" />
+              <figcaption>
+                <span data-lang-text="en">My parents, my twin, and me</span>
+                <span data-lang-text="zh" hidden>父母、孪生，和我</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="chapter">
+          <h2 class="section-title">
+            <span data-lang-text="en">Farther out</span>
+            <span data-lang-text="zh" hidden>远行与世界</span>
+          </h2>
+          <div class="chapter-copy">
+            <p data-lang-text="en">Beyond the routine, I am always on the move—climbing, skiing, reading, and wandering. Seventeen countries and counting. My phone is a quiet archive of unsorted frames; here are just a few, raw and uncatalogued.</p>
+            <p data-lang-text="zh" hidden>越过日常的轨道，我总是在路上——攀岩、滑雪、阅读、远行。足迹走过十七个国家。手机里塞满了还没来得及整理的碎片，这里只挑了几个未经修饰的瞬间。</p>
+          </div>
+          <div class="sky">
+            <figure class="polaroid">
+              <img src="life/travel-nye.jpg" alt="Walking away down a snow-covered street at dusk" />
+              <figcaption>
+                <span data-lang-text="en">Norway</span>
+                <span data-lang-text="zh" hidden>挪威</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/travel-hangzhou.jpg" alt="Silhouette at sunset over the water" />
+              <figcaption>
+                <span data-lang-text="en">Hangzhou</span>
+                <span data-lang-text="zh" hidden>杭州</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/travel-jiuzhaigou.jpg" alt="By a turquoise lake in the mountains" />
+              <figcaption>
+                <span data-lang-text="en">Jiuzhaigou</span>
+                <span data-lang-text="zh" hidden>九寨沟</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/travel-ice.jpg" alt="On a boat among ice in Iceland, holding a piece of clear ice" />
+              <figcaption>
+                <span data-lang-text="en">Iceland</span>
+                <span data-lang-text="zh" hidden>冰岛</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/travel-shanghai.jpg" alt="Jumping on the grass in a park" />
+              <figcaption>
+                <span data-lang-text="en">Shanghai</span>
+                <span data-lang-text="zh" hidden>上海</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/travel-florence.jpg" alt="Laughing by a river and a stone tower" />
+              <figcaption>
+                <span data-lang-text="en">Florence</span>
+                <span data-lang-text="zh" hidden>佛罗伦萨</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/vienna-flags.jpg" alt="Standing in front of a wall of national flags" />
+              <figcaption>
+                <span data-lang-text="en">Vienna</span>
+                <span data-lang-text="zh" hidden>维也纳</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/travel-snowboard.jpg" alt="Snowboarding in the mountains with a friend" />
+              <figcaption>
+                <span data-lang-text="en">Mountains, snowboard</span>
+                <span data-lang-text="zh" hidden>雪山，滑雪</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="chapter">
+          <h2 class="section-title">
+            <span data-lang-text="en">On the Wall</span>
+            <span data-lang-text="zh" hidden>在岩壁上</span>
+          </h2>
+          <div class="chapter-copy">
+            <p data-lang-text="en">I’ve been climbing for seven years. What I like is that it gathers strength, thought, and attention into one practice. This is a beginner’s course I made: <a href="https://aqkeepstudying.github.io/bouldering-basics/#basics">Bouldering Basics</a>.</p>
+            <p data-lang-text="zh" hidden>喜欢攀岩已经7年啦。攀岩的乐趣在于，力量、思考、专注的集大成者。这是我做的新手入门课：<a href="https://aqkeepstudying.github.io/bouldering-basics/#basics">Bouldering Basics</a>。</p>
+          </div>
+          <div class="sky sky-climb">
+            <figure class="polaroid">
+              <img src="life/climb-hands.jpg" alt="Taped fingers on a climbing hold" />
+              <figcaption>
+                <span data-lang-text="en">Hands</span>
+                <span data-lang-text="zh" hidden>手</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/climb-indoor.jpg" alt="Climbing indoors, reaching for a hold" />
+              <figcaption>
+                <span data-lang-text="en">Indoor</span>
+                <span data-lang-text="zh" hidden>岩馆</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/climb-gym.jpg" alt="On a colourful indoor bouldering wall" />
+              <figcaption>
+                <span data-lang-text="en">Gym</span>
+                <span data-lang-text="zh" hidden>抱石</span>
+              </figcaption>
+            </figure>
+            <figure class="polaroid">
+              <img src="life/climb-wall.jpg" alt="On a cliff with a red rope, looking down" />
+              <figcaption>
+                <span data-lang-text="en">Outside</span>
+                <span data-lang-text="zh" hidden>户外</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
   </div>
+  <script>
+    (function () {
+      var saved = localStorage.getItem("ziqing-lang") || "en";
+      function setLang(lang) {
+        document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+        document.querySelectorAll("[data-lang-text]").forEach(function (el) {
+          el.hidden = el.getAttribute("data-lang-text") !== lang;
+        });
+        document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
+          btn.setAttribute("aria-pressed", String(btn.getAttribute("data-set-lang") === lang));
+        });
+        localStorage.setItem("ziqing-lang", lang);
+      }
+      setLang(saved);
+      document.querySelector(".lang-switch").addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-set-lang]");
+        if (btn) setLang(btn.getAttribute("data-set-lang"));
+      });
+    })();
+  </script>
 </body>
 </html>
